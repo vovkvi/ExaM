@@ -4,6 +4,9 @@
 	cursor: pointer;
 	flex: 2;
 }
+.no-index {
+	display : none;
+}
 
 .sun,
 .moon,
