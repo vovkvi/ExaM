@@ -190,7 +190,7 @@ function getCard(){
     $.each(docs, (i) => {
         $.each(docs[i], (k,v) => {
             if (k === currentPage) {
-                ttl = v[1];
+                ttl = v[0];
                 icn = v[2];
             }
         });
