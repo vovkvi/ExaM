@@ -65,8 +65,8 @@ Hyphenopoly.config({
         "en-us": "Supercalifragilisticexpialidocious"
     },
     paths: {
-        patterndir: "../third-party/hyphenopoly/patterns/",
-        maindir: "../third-party/hyphenopoly/"
+        patterndir: "./third-party/hyphenopoly/patterns/",
+        maindir: "./third-party/hyphenopoly/"
     },
     setup: {
         selectors: {
