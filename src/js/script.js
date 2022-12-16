@@ -41,7 +41,7 @@ $(document).ready(() => {
                         <svg class="ri-icn"><use xlink:href="#ri-moon-fill"></use></svg>\
                         <input class="slider" type="checkbox" onclick="changeTheme();">\
                     </label>\
-                    <label class="switch" id="screen" onclick="fullScreen();>\
+                    <label class="switch" id="screen" onclick="fullScreen();">\
 			<svg class="ri-icn"><use xlink:href="#ri-fullscreen-fill"></use></svg>\
 		    </label>\
                 </div>'
