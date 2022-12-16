@@ -15,6 +15,9 @@ $(document).ready(() => {
             }
         }
     });
+    document.addEventListener('fullscreenchange', (event) => {
+    	$('#screen>svg>use').attr('xlink:href',document.fullscreenElement?'#ri-fullscreen-exit-fill':'#ri-fullscreen-fill');
+    });
     $('.footer').html('&copy; Vitalii Vovk, ' + new Date().getFullYear());
     $.getScript('./src/js/config.js', () => {
         if (pg != undefined) {
@@ -38,9 +41,8 @@ $(document).ready(() => {
                         <svg class="ri-icn"><use xlink:href="#ri-moon-fill"></use></svg>\
                         <input class="slider" type="checkbox" onclick="changeTheme();">\
                     </label>\
-                    <label class="switch" id="screen">\
+                    <label class="switch" id="screen" onclick="fullScreen();>\
 			<svg class="ri-icn"><use xlink:href="#ri-fullscreen-fill"></use></svg>\
-			<input class="slider" type="checkbox" onclick="fullScreen();">\
 		    </label>\
                 </div>'
             );
@@ -191,7 +193,6 @@ function getCard(){
     });
 }
 function fullScreen() {
-    $('#screen>svg>use').attr('xlink:href',$('#screen>input').prop('checked')?'#ri-fullscreen-exit-fill':'#ri-fullscreen-fill');
     if (document.fullscreenElement) {
         document.exitFullscreen();
     } else {
