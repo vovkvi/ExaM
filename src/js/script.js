@@ -115,9 +115,9 @@ function showIndexPage() {
     $('div.content').empty();
     $('title').text('EXAM. Самоподготовка.');
     $('.active-chapter>svg>use').attr('xlink:href','#ri-home-2-fill');
-    renderTable(qevent,'tbl-event','<br>Внеплановые проверки знаний в связи с изменениями НТД<br><br>');
     renderTable(qcard,'tbl-card','Билеты для подготовки к экзамену в ПДК ТЭЦ-14<br><br>');
     renderTable(qtest,'tbl-test','<br>Контрольные вопросы и инструкции<br><br>');
+    renderTable(qevent,'tbl-event','<br>Внеплановые проверки знаний в связи с изменениями НТД<br><br>');
     changeTheme();
 }
 function nextCard() {
