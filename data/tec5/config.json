@@ -1,0 +1,29 @@
+[
+	{
+		"id" : "cards",
+		"title" : "Билеты для подготовки к экзамену",
+		"items" : [
+			{
+				"id" : "eb5",
+				"name" : "ЭБ-V",
+				"description" : "Электробезопасность</br>(группа V)",
+				"icon" : "#ri-flashlight-fill",
+				"data" : "eb5"
+			},
+			{
+				"id" : "pte",
+				"name" : "ПТЭ",
+				"description" : "Техническая эксплуатация",
+				"icon" : "#ri-tools-fill",
+				"data" : null
+			},
+			{
+				"id" : "pb",
+				"name" : "ПБ",
+				"description" : "Пожарная безопасность",
+				"icon" : "#ri-fire-fill",
+				"data" : null
+			}
+		]
+	}
+]

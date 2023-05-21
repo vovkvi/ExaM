@@ -1,0 +1,111 @@
+[
+	{
+		"id" : "cards",
+		"title" : "Билеты для подготовки к экзамену",
+		"items" : [
+			{
+				"id" : "ot",
+				"name" : "ОТ",
+				"description" : "Охрана труда",
+				"icon" : "#ri-alarm-warning-fill",
+				"data" : null
+			},
+			{
+				"id" : "pb",
+				"name" : "ПБ",
+				"description" : "Пожарная безопасность",
+				"icon" : "#ri-fire-fill",
+				"data" : null
+			},
+			{
+				"id" : "pprp",
+				"name" : "ППРП",
+				"description" : "Работа с персоналом",
+				"icon" : "#ri-group-fill",
+				"data" : null
+			},
+			{
+				"id" : "eb2",
+				"name" : "ЭБ-II",
+				"description" : "Электробезопасность</br>(группа II)",
+				"icon" : "#ri-flashlight-fill",
+				"data" : "eb"
+			},
+			{
+				"id" : "eb3",
+				"name" : "ЭБ-III",
+				"description" : "Электробезопасность</br>(группа III)",
+				"icon" : "#ri-flashlight-fill",
+				"data" : "eb"
+			},
+			{
+				"id" : "eb4",
+				"name" : "ЭБ-IV",
+				"description" : "Электробезопасность</br>(группа IV)",
+				"icon" : "#ri-flashlight-fill",
+				"data" : "eb"
+			},
+			{
+				"id" : "pte",
+				"name" : "ПТЭ (ИТР)",
+				"description" : "Техническая эксплуатация</br>(инженерно-технические работники)",
+				"icon" : "#ri-tools-fill",
+				"data" : null
+			},
+			{
+				"id" : "eb5",
+				"name" : "ЭБ-V",
+				"description" : "Электробезопасность</br>(группа V)",
+				"icon" : "#ri-flashlight-fill",
+				"data" : "eb"
+			},
+			{
+				"id" : "pte_op",
+				"name" : "ПТЭ (ОП)",
+				"description" : "Техническая эксплуатация</br>(оперативный персонал)",
+				"icon" : "#ri-tools-fill",
+				"data" : null
+			}
+		]
+	},
+	{
+		"id" : "docs",
+		"title" : "Контрольные вопросы и старые билеты",
+		"items" : [
+			{
+				"id" : "nds",
+				"name" : "НДС",
+				"description" : "Нарядно-допускная система",
+				"icon" : "#ri-edit-2-fill",
+				"data" : null
+			},
+			{
+				"id" : "op",
+				"name" : "ОП",
+				"description" : "Оперативные переключения",
+				"icon" : "#ri-dashboard-2-fill",
+				"data" : null
+			},
+			{
+				"id" : "md",
+				"name" : "Помощь",
+				"description" : "Первая медицинская помощь",
+				"icon" : "#ri-first-aid-kit-fill",
+				"data" : null
+			}
+		]
+	},
+	{
+		"id" : "events",
+		"title" : "Изменения в нормативных документах",
+		"items" : [
+			{
+				"id" : "pteep",
+				"name" : "ПТЭ",
+				"description" : "Правила технической эксплуатации (внеплановая проверка)",
+				"icon" : "#ri-tools-fill",
+				"data" : null
+			}
+		]
+	}
+]
