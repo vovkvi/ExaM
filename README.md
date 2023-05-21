@@ -1,4 +1,4 @@
-# ExaM v2 preview
+# ExaM v2
 
 ![Preview](preview.png)
 
