@@ -195,6 +195,11 @@ function fullScreen() {
     document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
 }
 
+function showCardSwithces() {
+    currentCard >= countCard ? $('#btn-next').css('display', 'none') : $('#btn-next').css('display', 'inline-flex');
+    currentCard < 1 ? $('#btn-prev').css('display', 'none') : $('#btn-prev').css('display', 'inline-flex');
+}
+
 function nextCard() {
     $('body').attr('card', (currentCard < countCard) ? currentCard + 1 : countCard);
     getCard();
@@ -271,4 +276,5 @@ function getCard(){
     });
     window.scrollTo(0,0);
     showAnswers();
+    showCardSwithces();
 }
