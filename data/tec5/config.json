@@ -8,7 +8,14 @@
 				"name" : "ЭБ-V",
 				"description" : "Электробезопасность</br>(группа V)",
 				"icon" : "#ri-flashlight-fill",
-				"data" : "eb5"
+				"data" : null
+			},
+			{
+				"id" : "ot",
+				"name" : "ОТ",
+				"description" : "Охрана труда",
+				"icon" : "#ri-alarm-warning-fill",
+				"data" : null
 			},
 			{
 				"id" : "pte",
