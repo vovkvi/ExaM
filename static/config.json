@@ -4,13 +4,15 @@
 		"name" : "ТЭЦ-14",
 		"description" : "Первомайская ТЭЦ",
 		"data" : "https://raw.githubusercontent.com/vovkvi/exam/main/data/tec14",
-		"last_update" : "12.05.2023"
+		"background" : "img/tec14.jpg",
+		"last_update" : "22.06.2023"
 	},
 	{
 		"id" : "tec5",
 		"name" : "ТЭЦ-5",
 		"description" : "Правобережная ТЭЦ",
 		"data" : "https://raw.githubusercontent.com/vovkvi/exam/main/data/tec5",
-		"last_update" : "20.05.2023"
+		"background" : "img/tec5.jpg",
+		"last_update" : "20.06.2023"
 	}
 ]
