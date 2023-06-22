@@ -390,7 +390,8 @@ body[dark="1"] {
 	line-height: 1.4rem;
 	margin-top: 1.2rem;
 }
-body[dark="1"] .answer, .answer-subdetails {
+body[dark="1"] .answer,
+body[dark="1"] .answer-subdetails {
 	font-weight: 350;
 	color: var(--switch-fill);
 }
