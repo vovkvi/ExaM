@@ -174,15 +174,17 @@ body[dark="1"] {
  *   1. Cards
  **************************************************/
 .ri-icn-card {
-	width: 72px;
-	height: 72px;
-	padding-top: 12px;
-	padding-left: 12px;
-	outline: 2px solid var(--btn-color);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3.2rem;
+	height: 3.2rem;
+	padding-top: 0.6rem;
+	padding-left: 0.6rem;
 	box-shadow: 0 10px 15px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
-	border-radius: 8px;
-	margin-bottom: 10px;
+	border-bottom-right-radius: 8px;
 	fill: var(--btn-color);
+	background: var(--card-bgrnd);
 	transition: fill .7s ease;
 }
 .ri-icn-card:hover {
@@ -294,29 +296,48 @@ body[dark="1"] {
 	display: inline-block;
 }
 .elem {
+	height: 13rem;
 	position: relative;
 	text-align: center;
-	padding: 2rem 1rem 1rem 1rem;
+	padding: 2rem 0 1rem 0;
 	margin: 0.3rem;
 	display: block;
 	background: var(--card-bgrnd);
 	box-shadow: 0 10px 15px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
 	border-radius: 8px;
-	overflow: hidden;	
+	overflow: hidden;
 }
 .elem h2 {
 	color: var(--text-color);
-	margin-top: 10px;
+	margin-top: 1rem;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 	user-select: none;
+	font-size: 1.2rem;
 }
 .elem p {
-	color: var(--gray);
-	margin-top: 2px;
-	margin-bottom: 5px;
-	height: 40px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	display: block;
+	color: var(--color-alcent);
 	user-select: none;
+	top: 50%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+.elem-blur-div {
+	background: rgba(255,255,255,0.5);
+	padding-top: 2rem;
+	height: 100%;
+}
+.elem-bottom-div {
+	position: absolute;
+	bottom: 0;
+	height: 4rem;
+	width: 100%;
+	background: var(--card-bgrnd);
+	overflow: hidden;
 }
 /**************************************************
  *   5. Page "Section"
@@ -346,11 +367,35 @@ body[dark="1"] {
 	line-height: 1.4rem;
 	margin-top: 10px;
 }
+.answer-media {
+	text-align: center;
+	width: 100%;
+	margin: 1rem .0 1rem 0;
+}
+.answer-media img {
+	border-radius: 1rem;
+	max-width: 100%;
+  	height: auto;
+  	margin-bottom: 1rem;
+}
+.answer-media h2 {
+	text-align: center;
+	font-weight: 400;
+}
+.summary-subdetails {
+	margin-bottom: -0.7rem;
+}
+.answer-subdetails {
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+	margin-top: 1.2rem;
+}
 body[dark="1"] .answer {
 	font-weight: 350;
 	color: var(--switch-fill);
 }
-.answer p {
+.answer p,
+.answer-subdetails p {
 	text-indent: 20px;
 }
 details {
@@ -364,6 +409,11 @@ details {
 	overflow: hidden;
 	margin-bottom: 0.5rem;
 }
+details > details {
+	margin-bottom: -3rem;
+	width: auto;
+	margin: .5rem;
+}
 summary::-webkit-details-marker {
 	display: none;
 }
@@ -375,7 +425,7 @@ summary::marker {
 } 
 summary {
 	display: block;
-	padding:.3em .3em .7em 1.4em;
+	padding:.3em .3em .5em 1.4em;
 	font-size: 14pt;
 	line-height: 1.2rem;
 	cursor: pointer;
